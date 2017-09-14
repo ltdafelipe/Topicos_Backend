@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-
+var cors = require('cors');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var todos = require('./routes/todos');
 // inicia o express
 var app = express();
-
+app.use(cors());
 
 // configura middlewares do express
 app.use(logger('dev'));

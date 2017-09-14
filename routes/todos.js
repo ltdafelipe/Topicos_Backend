@@ -1,8 +1,57 @@
 var express = require("express");
 var todos = express.Router();
 
-var todosList = [];
-var todoIndex = 0;
+var todosList = [
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 5,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 6,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 7,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 8,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 9,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 10,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 11,
+        "completed": false
+    },
+    {
+        "title": "Tarefas de Teste",
+        "description": "Descrição da tarefa",
+        "id": 12,
+        "completed": false
+    }
+];
+var todoIndex = 13;
 
 
 todos.get('/', function (req, res, next) {
